@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business-informatics</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <a href="KOLOMYTTSEVA-PROJECT/" class="logo">
+                    <img src="img/logo.png" alt="" class="logo__img">
+                    <div class="logo__text">Бизнес-информатик</div>
+                </a>
+                <nav class="header__nav">
+                    <a href="/" class="header__link">Услуги</a>
+                    <a href="KOLOMYTTSEVA-PROJECT/contacts.html" class="header__link">Контакты</a>
+                    <a href="#" class="header__link">Отзывы</a>
+                    <a href="KOLOMYTTSEVA-PROJECT/team.html" class="header__link">Наша команда</a>
+                    <a href="KOLOMYTTSEVA-PROJECT/portfolio.html" class="header__link">Портфолио</a>
+                    <a href="#" class="header__link cart-open">Корзина</a>
+                </nav>
+                <button class="burger">
+                    <img src="img/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-team">
+            <div class="service-title team-title">
+                <h2>Наша команда</h2>
+            </div>
+            <div class="container">
+                <div class="member">
+                    <img src="img/member-1.jpg" alt="" class="member__img">
+                    <div class="member__content">
+                        <h3 class="member__name">Арина Коломытцева</h3>
+                        <p class="member__text">
+                            Выпускница специальности бизнес-информатика на Федеральном уровне, копирайтер,
+                            свободно владеет несколькими языками, веб-дизайнер и программист с большим опытом
+                            работы и рекомендациями.
+                        </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member__content">
+                        <h3 class="member__name">Фрида Шамоян</h3>
+                        <p class="member__text">
+                            Бизнес-аналитик, выпускница прикладной информатики, специалист в сфере разработки и технической поддержки клиента.
+                        </p>
+                    </div>
+                    <img src="img/member-2.jpg" alt="" class="member__img">
+                </div>
+                <div class="member">
+                    <img src="img/member-3.jpg" alt="" class="member__img">
+                    <div class="member__content">
+                        <h3 class="member__name">Никита Белоусов</h3>
+                        <p class="member__text">
+                            SEO специалист, специалист по оптимизации сайтов, контент-мейкер.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copy">© На этом сайте все защищено.</p>
+        </div>
+    </footer>
+
+    <div class="cart ">
+        <div class="cart__header">
+            <h2 class="cart__title">Ваш заказ:</h2>
+            <img src="img/close-cart.png" class="cart__close" alt="">
+        </div>
+        <div class="cart__orders">
+            <div class="cart__order order" data-service='4' data-price="49000" data-amount="1">
+                <img src="img/p-1.png" alt="" class="order__img">
+                <h3 class="order__title">Сайт для салона красоты</h3>
+                <div class="order__amount">
+                    <div class="order__control">-</div>
+                    <div class="order__num">1</div>
+                    <div class="order__control">+</div>
+                </div>
+                <div class="order__price">
+                    49 000 р.
+                </div>
+                <div class="order__delete">+</div>
+            </div>
+        </div>
+        <div class="cart__total">Сумма: <span>49 000 р.</span></div>
+        <form action="." method="post" class="cart__form order-form">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" class="input">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" class="input">
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="city">Ваш город</label>
+                <input type="text" name="city" class="input">
+                <span class="error-message"></span>
+            </div>
+            <button class="order-form__btn" type="submit">Оформить заказ</button>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
